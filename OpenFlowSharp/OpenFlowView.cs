@@ -246,7 +246,7 @@ namespace OpenFlowSharp
 			if (animated){
 				BeginAnimations (null);
 				SetAnimationCurve (UIViewAnimationCurve.EaseOut);
-				SetAnimationBeginsFromCurrenState (true);
+				SetAnimationBeginsFromCurrentState (true); // fixed typo Curren -> Current
 			}
 			aCover.Layer.Transform = newTransform;
 			aCover.Layer.ZPosition = newZPosition;
